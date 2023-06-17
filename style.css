@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+  padding: 1rem;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
