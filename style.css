@@ -6,15 +6,19 @@
   font-family: "Cabin", sans-serif;
 }
 
-img {
-  height: 150px;
-  width: 150px;
+body {
+  background-color: whitesmoke;
 }
-nav {
+img {
+  height: 190px;
+  width: 190px;
+}
+#nav-diseño {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: hsl(0, 0%, 0%);
+  background-color: #202020;
+
   padding: 1rem;
 }
 
@@ -27,4 +31,58 @@ ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+#portada {
+  padding: 10px 0;
+  max-width: 1200px;
+}
+
+.portada-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+#portada h1 {
+  font-size: 30px;
+  width: 20%;
+  font-weight: 800;
+}
+
+.portada-texto {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+}
+
+.portada-texto p {
+  font-size: 16px;
+  font-weight: 300;
+  color: grey;
+  text-decoration: underline;
+}
+
+.portada-texto a {
+  font-size: 16;
+  font-weight: 300;
+  color: rgb(202, 0, 0);
+  text-decoration: underline;
+}
+
+.portada-img {
+  background-color: #202020;
+  display: flex;
+  gap: 15px;
+  float: right;
+}
+
+.portada-img img {
+  height: 300px;
+  width: 300px;
+}
+
+#portada-color {
+  background-color: #202020;
 }
