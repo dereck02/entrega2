@@ -33,56 +33,30 @@ ul {
   gap: 20px;
 }
 
-#portada {
-  padding: 10px 0;
-  max-width: 1200px;
-}
-
-.portada-info {
+#container {
+  background-color: #202020;
+  height: 500px;
+  width: auto;
   display: flex;
-  gap: 10px;
-  margin-bottom: 50px;
-}
-
-#portada h1 {
-  font-size: 30px;
-  width: 20%;
-  font-weight: 800;
-}
-
-.portada-texto {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
   gap: 20px;
+  width: 45%;
+  flex-direction: col;
 }
 
-.portada-texto p {
-  font-size: 16px;
-  font-weight: 300;
-  color: grey;
-  text-decoration: underline;
+#portada-info {
+  width: 900px;
 }
 
-.portada-texto a {
-  font-size: 16;
-  font-weight: 300;
-  color: rgb(202, 0, 0);
-  text-decoration: underline;
+#portada-img {
+  margin-left: 300px;
+  width: 400px;
+}
+#portada-img img {
+  height: 400px;
+  width: 400px;
 }
 
-.portada-img {
-  background-color: #202020;
-  display: flex;
-  gap: 15px;
-  float: right;
-}
-
-.portada-img img {
-  height: 300px;
-  width: 300px;
-}
-
-#portada-color {
-  background-color: #202020;
+#portada-info h1 {
+  background-color: white;
+  font-size: 20px;
 }
