@@ -7,10 +7,10 @@
 }
 
 body {
-  background: -webkit-linear-gradient(to right, #fe60e3, #202020 80%);
-  background: -moz-linear-gradient(#fe60e3, #202020 80%);
-  background: -o-linear-gradient(to right, #fe60e3, #202020 80%);
-  background: linear-gradient(to right, #fe60e3, #202020 80%);
+  background: -webkit-linear-gradient(to right, #fe60e3, #202020 90%);
+  background: -moz-linear-gradient(#fe60e3, #202020 90%);
+  background: -o-linear-gradient(to right, #fe60e3, #202020 90%);
+  background: linear-gradient(to right, #fe60e3, #202020 90%);
   background-attachment: fixed;
 }
 
