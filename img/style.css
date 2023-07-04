@@ -7,19 +7,11 @@
 }
 
 body {
-  /* background-color: whitesmoke; */
-  background-position: center center;
-  background: #202020c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fe60e3,
-    #202020
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fe60e3,
-    #202020
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #fe60e3, #202020 80%);
+  background: -moz-linear-gradient(#fe60e3, #202020 80%);
+  background: -o-linear-gradient(to right, #fe60e3, #202020 80%);
+  background: linear-gradient(to right, #fe60e3, #202020 80%);
+  background-attachment: fixed;
 }
 
 img {
@@ -71,8 +63,14 @@ ul {
 }
 
 #portada-info h1 {
-  color: white;
-  font-size: 50px;
+  /* color: white;
+  font-size: 50px; */
+
+  background: linear-gradient(to right, #fe60e3, #202020 90%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 40px;
 }
 #portada-info p {
   color: gray;
@@ -125,4 +123,11 @@ ul {
   margin-top: 20px;
   align-items: center;
   display: flex;
+}
+#texto-info h4 {
+  background: linear-gradient(to right, #fe60e3, #202020 90%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 20px;
 }
