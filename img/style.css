@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 * {
-  margin: 6px;
-  padding: 5px;
+  margin: 2px;
+  padding: 2px;
   box-sizing: border-box;
   font-family: "Cabin", sans-serif;
 }
@@ -21,28 +21,57 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  padding: 0px 30px 0px 100px;
-  /* position: fixed; */
+  padding: 0px 0px 0px 150px;
   position: sticky;
   top: 0;
-  z-index: 2; /* para que se vea siempre por encima */
+  z-index: 2;
 }
 
-.logo {
-  height: 110px;
+.nav-diseño,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-diseño {
+  gap: 150px;
+}
+
+.nav {
+  gap: 30px;
+}
+
+.nav a {
+  color: gray;
+  font-size: 15px;
+}
+
+.nav li:first-child > a {
+  color: white;
+  font-weight: 600;
+}
+
+.cart-icon {
+  font-weight: 600;
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  margin-right: 1rem;
+  color: white;
+  cursor: pointer;
 }
 
 img {
-  height: 100px;
   width: 100px;
 }
+
 #nav-diseño {
-  left: 50px;
+  left: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #202020;
-
   padding: 1rem;
 }
 
@@ -54,44 +83,58 @@ ul a {
 ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+}
+
+.cart-icon {
+  font-weight: 600;
+  height: 30px;
+  width: 100%;
+  padding: 5px 10px;
+  margin-right: 1rem;
+  color: var(--text-white);
+  cursor: pointer;
 }
 
 #container {
-  /* background-color: #202020; */
-  height: 500px;
+  /* height: 5; */
   width: auto;
   display: flex;
   padding: 30px;
   margin-bottom: 30px;
   background-position: center;
 }
+
 #portada-info {
   width: 500px;
 }
 
 #portada-img {
-  margin-left: 600px;
-  width: 400px;
+  width: 800px;
+  /* background-color: #202020; */
+  padding: 1px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 #portada-img img {
-  height: 400px;
-  width: 400px;
+  height: 420px;
+  width: 420px;
 }
 
 #portada-info h1 {
-  /* color: white;
-  font-size: 50px; */
-
-  background: linear-gradient(to right, #fe60e3, #202020 90%);
+  color: white;
+  background: linear-gradient(to right, #fe60e3, #202020 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 40px;
 }
+
 #portada-info p {
-  color: gray;
+  color: rgb(255, 255, 255);
   font-size: 22px;
   margin-top: 45px;
 }
@@ -124,28 +167,212 @@ ul {
   border-radius: 50px;
 }
 
-#info {
+.info {
   background-color: #202020;
-  height: 300px;
+  height: 500px;
   width: auto;
   display: flex;
-  padding: 10px;
+  padding: 30px 10px;
   align-items: center;
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
-
 #texto-info p {
-  color: grey;
-  font-size: 15px;
+  justify-content: flex-start;
+  top: 1px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
   margin-top: 20px;
-  align-items: center;
+
   display: flex;
+  padding: 20px;
 }
 #texto-info h4 {
-  background: linear-gradient(to right, #fe60e3, #202020 90%);
+  background: linear-gradient(to right, #fe60e3, #202020 110%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+#ventajas {
+  padding: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #202020;
+}
+
+#ventajas h1 {
+  background: linear-gradient(to right, #ffffff, #202020 120%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 45px;
+}
+
+.ventajas-cards-info {
+  /* background-color: #220058; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 160px;
+}
+
+.ventajas-card {
+  width: 300px;
+  height: 300px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 15px;
+  gap: 15px;
+  /* box-shadow: #fe60e3, #202020; */
+}
+
+.ventajas-card img {
+  width: 65px;
+  height: 65px;
+}
+
+.ventajas-card h3 {
+  font-size: 16px;
+  font-weight: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.ventajas-card p {
+  font-size: 16px;
+  font-weight: 30px;
+  color: rgb(255, 255, 255);
+}
+
+#section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  padding: 50px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+}
+
+.imagen-contacto {
+  width: 600px;
+  /* background-color: #fa0101; */
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.imagen-contacto img {
+  width: 100%;
+}
+
+.contacto-info {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  color: rgb(246, 247, 248);
+}
+
+.nombre {
+  background: linear-gradient(to right, #fe60e3, #202020 110%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 22px;
+  font-size: 30px;
+}
+
+.contact {
+  text-decoration: underline;
+  background: linear-gradient(to right, #ffffff, #202020 120%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 40px;
+}
+
+.redes {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mapa,
+.correo,
+.telefono {
+  /* background-color: #fe60e3; */
+  font-size: 18px;
+  width: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.link-redes {
+  color: white;
+}
+
+.mapa img {
+  width: 30px;
+  height: 30px;
+}
+
+.correo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 1px;
+}
+
+.telefono img {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+footer {
+  background: #202020;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+footer p {
+  color: gray;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imagen-footer {
+  display: flex;
+  justify-items: center;
 }
